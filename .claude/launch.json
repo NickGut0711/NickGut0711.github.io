@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static-site",
+      "runtimeExecutable": "/opt/homebrew/bin/node",
+      "runtimeArgs": ["-e", "const h=require('http'),fs=require('fs'),p=require('path'),u=require('url');h.createServer((q,r)=>{let path=u.parse(q.url).pathname,f=p.join('/Users/niko/Documents/personal_website_two',path==='/'?'index.html':path),e=p.extname(f),m={'':' text/plain','.html':'text/html','.css':'text/css','.js':'text/javascript','.jpg':'image/jpeg','.png':'image/png'};fs.readFile(f,(err,d)=>{if(err){r.writeHead(404);r.end('Not found')}else{r.writeHead(200,{'Content-Type':m[e]||'text/plain'});r.end(d)}})}).listen(process.env.PORT||8080)"],
+      "port": 8080,
+      "autoPort": true
+    }
+  ]
+}
