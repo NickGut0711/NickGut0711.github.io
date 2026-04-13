@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script>
     // Prevent flash: apply saved theme before render
     (function() {
@@ -151,6 +153,13 @@
     h1 {
       font-size: 1.75rem;
       font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .contact {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin: 0;
     }
 
     section {
@@ -233,10 +242,9 @@
   <main>
     <div class="top-bar">
       <nav class="tabs">
-        <a href="mailto:ngutierrez@g.harvard.edu">Email</a>
-        <a href="https://www.linkedin.com/in/nickholasgutierrez">LinkedIn</a>
-        <a href="https://beyondmoore.substack.com">Substack</a>
-        <a href="https://scholar.google.com/citations?user=Bk9Oc-cAAAAJ&hl=en">Scholar</a>
+        <a href="https://scholar.google.com/citations?user=Bk9Oc-cAAAAJ&hl=en" aria-label="Google Scholar"><i class="ai ai-google-scholar" style="font-size:1.1rem; vertical-align:middle;"></i></a>
+        <a href="https://www.linkedin.com/in/nickholasgutierrez" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" style="font-size:1.1rem; vertical-align:middle;"></i></a>
+        <a href="https://beyondmoore.substack.com">Beyond Moore Blog</a>
       </nav>
       <div class="toggle-switch">
         <input type="checkbox" id="color-mode" class="toggle-checkbox">
@@ -246,7 +254,10 @@
 
     <div class="header">
       <img src="headshot.jpg" alt="Nickholas Gutierrez" class="headshot">
-      <h1>Nickholas Gutierrez</h1>
+      <div>
+        <h1>Nickholas Gutierrez</h1>
+        <p class="contact">Contact: ngutierrez [at] g [dot] harvard [dot] edu</p>
+      </div>
     </div>
 
     <section>
